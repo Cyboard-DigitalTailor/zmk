@@ -8,8 +8,8 @@
   },
   "mounts": [
     "type=volume,source=zmk-root-user,target=/root",
-    "type=volume,source=zmk-config,target=/workspaces/zmk-config",
-    "type=volume,source=zmk-modules,target=/workspaces/zmk-modules",
+    "type=bind,source=/home/realet/zmk-environment/zmk-configs/cyboard/test-zmk-config-3,target=/workspaces/zmk-config",
+    "type=bind,source=/home/realet/zmk-environment/zmk-modules,target=/workspaces/zmk-modules",
     "type=volume,source=zmk-zephyr,target=${containerWorkspaceFolder}/zephyr",
     "type=volume,source=zmk-zephyr-modules,target=${containerWorkspaceFolder}/modules",
     "type=volume,source=zmk-zephyr-tools,target=${containerWorkspaceFolder}/tools"
